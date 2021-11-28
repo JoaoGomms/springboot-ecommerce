@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/pagamento")
+@RequestMapping(path = "api/v1/pagamento")
 public class PagamentoController {
 
     @Autowired

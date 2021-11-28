@@ -17,20 +17,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("api/v1/users")
 public class UserController {
 
     @Autowired
     private UserRepository userRepository;
 
-   /* @GetMapping
+   @GetMapping
     public Page<User> list(@RequestParam(required = false) int page, @RequestParam(required = false) int size) {
         return userRepository.findAll(PageRequest.of(page, size));
-    }*/
-   @GetMapping
-   public List<User> list(){
-       return userRepository.findAll();
-   }
+    }
 
     @GetMapping(path = "/{id}")
     public User get(@PathVariable Long id) {

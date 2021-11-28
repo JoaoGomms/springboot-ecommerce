@@ -9,7 +9,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/categorias")
+@RequestMapping("api/v1/categorias")
 public class CategoriaController{
 
     @Autowired
